@@ -1,31 +1,35 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #28b487;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  font-family: sans-serif;
+  color: #333;
+  width: 1280px;
+  height: 100vh;
 }
 
 * {
-  font-size: 100%;
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
+  font-size: 62%;
   letter-spacing: 1px;
   word-spacing: 1px;
   box-sizing: border-box;
-  width: 1140px;
 }
 
 .show-modal {
   margin-top: 40px;
   margin-right: 20px;
   position: relative;
-  left: 34%;
-  top: 50%;
+  color: #fff;
+  left: 30%;
+  top: 5%;
   padding: 10px 20px;
   border-radius: 35px;
   border: none;
-  background-color: #eee;
+  background: #24745a;
   cursor: pointer;
   z-index: 1;
 }
@@ -38,16 +42,17 @@ html {
   width: 70%;
   padding: 8px;
   border-radius: 10px;
-  background-color: #eee;
+  color: #fff;
+  background-color: #24745a;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 14%;
+  top: 20%;
   z-index: 3;
 }
 
 .closeModal {
   float: right;
+  background-color: #24745a;
 }
 
 h1 {
