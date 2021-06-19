@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #28b487;
+}
+
+* {
+  font-size: 100%;
+  font-weight: 300;
+}
+
+html {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  box-sizing: border-box;
+  width: 1140px;
+}
+
+.show-modal {
+  margin-top: 40px;
+  margin-right: 20px;
+  position: relative;
+  left: 34%;
+  top: 50%;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.openModal {
+  width: 70%;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.closeModal {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1.5px);
+  z-index: 2;
+}
