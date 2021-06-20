@@ -24,3 +24,13 @@ for (let index = 0; index < showModal.length; index++) {
 
 closeModal.addEventListener('click', closeModalOverlayFunction);
 overlay.addEventListener('click', closeModalOverlayFunction);
+
+//Handling key press events - global events / keyboard events
+
+document.addEventListener('keydown', function (e) {
+  //listening for events everywhere
+  console.log(e);
+  if (e.key === 'Escape' && !openModal.classList.contains('hidden')) {
+    closeModalOverlayFunction();
+  }
+});
